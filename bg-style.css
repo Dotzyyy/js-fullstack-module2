@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    height: 100%;
+    
+
+}
+
+
+body {
+    color: #ECECEC;
+    background-color: #1D1D1D;
+    text-align: center;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    
+    
+}
+h1 {
+    color: #bfbfbf;
+    font-weight: 300;
+    background-color: #B50717;
+    padding: 10px;
+    margin: 0;
+}
+
+ul {
+    background-color: #131313;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    
+    
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+    
+}
+
+ a {
+    text-decoration: none;
+    color: #ECECEC
+}
+.current {
+    background-color: #1D1D1D;
+    
+    border-bottom: 2px solid #FFA384;
+    
+
+}
+
+li:hover {
+    background-color: #1D1D1D;
+
+}
+
+
+#new-deal {
+    color: #FFA384 ;
+    background-color: black;
+    margin:0;
+    padding: 0.75em 0 0.75em 0;
+}
+.paragraph-spacing {
+    padding: .5em;
+}
+
+
+
+
+/*Home Page */
+
+
+
+#featured-banner > img {
+    max-width: 100%;
+}
+
+
+#about-mini > img {
+    width: 40em;
+    max-width: 80%;
+     border-radius: 0.75em;
+    
+}
+
+.read-more {
+    background-color: #CF291D ;
+    padding: 0.25em 0.75em ;
+    border-radius: 0.50em;
+    font-weight: 600;
+}
+
+
+
+#need-help > img {
+    width: 40em;
+    max-width: 80%;
+     border-radius: 0.75em;
+
+}
+
+
+
+/*About Page CSS  */
+
