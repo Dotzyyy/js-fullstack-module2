@@ -23,8 +23,10 @@ h1 {
     color: #bfbfbf;
     font-weight: 300;
     background-color: #B50717;
-    padding: 10px;
+    padding: 1em;
     margin: 0;
+    
+    
 }
 
 ul {
@@ -112,4 +114,40 @@ li:hover {
 
 
 /*About Page CSS  */
+
+#know-more {
+    font-weight: bold;
+    padding-top: 10em;
+
+}
+
+
+
+
+
+/* Contact Page Css */
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    
+    
+}
+
+.submit-button {
+    background-color: #CF291D ;
+    padding: 0.25em 0.75em ;
+    border-radius: 0.50em;
+    font-weight: 600;
+    margin-top: 2em;
+    color: #ECECEC;
+    box-shadow: none;
+    border: none;
+}
+
+.submit-button:hover {
+    background-color: #B50717;
+    
+}
 
