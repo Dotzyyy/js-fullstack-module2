@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Board Games</title>
+        <link rel="stylesheet" type="text/css" href="/css/bg-style.css">
+        
+        
+    </head>
+    <body>
+        <header>
+           <div><h1>Board Gamers</h1>
+            
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="myaccount.html">Account</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <p id="new-deal">Buy ONE Game, Get SECOND game HALF price!!!</p>
+        </header>
+        <main>
+            <!-- A scrollable list of games and images-->
+            <section id="featured-banner">
+                <div class="featured-image">
+                    <img src="/images/chess-pexels-karolina-grabowska-5477774 (1).jpg" alt="chess pieces">
+                </div>
+                <div class="featured-image">
+                    <img src="/images/catan-game.jpg" alt="catan board game" >
+                </div class=>
+                <div class="featured-image">
+                    <img src="/images/various-dices.jpg" alt="various dices" >
+                </div>
+                <div class="featured-image">
+                    <img src="/images/risk-game.jpg" alt="risk board game" >
+                </div>
+                <div>
+                    <a id="previous-btn" class="banner-btn" onclick="changeImage(-1)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                        class="feather-chevron"><polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </a>
+                    <a id="next-btn" class="banner-btn" onclick="changeImage(1)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                        class="feather-chevron"><polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <a class="thumbnail-circle" onclick="activeImage(1)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"  stroke="currentColor" 
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10">
+                        </circle>
+                        </svg>
+                    </a>
+                    <a class="thumbnail-circle" onclick="activeImage(2)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"  stroke="currentColor" 
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10">
+                        </circle>
+                        </svg>
+                    </a>
+                    <a class="thumbnail-circle" onclick="activeImage(3)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"  stroke="currentColor" 
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10">
+                        </circle>
+                        </svg>
+                    </a>
+                    <a class="thumbnail-circle" onclick="activeImage(4)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"  stroke="currentColor" 
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10">
+                        </circle>
+                        </svg>
+                    </a>
+                    
+
+
+                </div>
+
+            </section>
+            <section id="game-list">
+                <div>
+                    <h3>
+                        New Games
+                    </h3>
+
+                </div>
+                <div>
+                    <h3>
+                        Top Sellers
+                    </h3>
+                </div>
+                <div>
+                    <h3>Placeholder</h3>
+                </div>
+
+            </section>
+            <!-- Following section will be a mini about section which will link to the larger about section. It will contain a mini image gallery 
+                that changes-->
+            <section id="about-mini" class="paragraph-spacing">
+                <h3>
+                    About Board Gamers
+                </h3>
+                <p> Here at Board Gamers we strive to make the world's best marketplace for everything tabletop!
+                    Based out of Dublin, Ireland we are proud to say we have changed the hobby forever.
+
+                </p>
+                <img src="/images/pexels-othmar-vigl-792051 (1).jpg" alt="boardgame pieces">
+                <p>
+                <a href="about.html" class="read-more">Read More</a>
+                </p>
+
+            </section>
+            <!-- Follow section will redirect to our FAQ page-->
+            <section id="need-help" class="paragraph-spacing">
+                <h3>Need Help?</h3>
+                <p>Most of our most frequently asked questions can be found on our FAQ page.</p>
+                <img src="/images/frustration-pexels-pixabay-207924 (1).jpg" alt="more board game pieces">
+                <p>
+                    <a href="faq.html" class="read-more">Read More</a>
+                </p>
+            </section>
+            <!-- Redirect to a shipping cost page-->
+            <section>
+                <h3>Shipping</h3>
+                <p>Calculate your shipping cost!</p>
+                <p>
+                    <a href="shipping.html" class="read-more">Calculate</a>
+                </p>
+            </section>
+
+
+
+
+        </main>
+        <footer>
+            <p>&copy;David Sexton 2023</p>
+        </footer>
+        <script src="/javascript/boardgame.js"></script>
+    </body>
+</html>
+
