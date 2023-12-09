@@ -28,9 +28,9 @@
          <main>
             <h2>Shipping</h2>
             <p>Calculate your shipping!</p>
-            <form method="post" action="" enctype="text/plain">
+            <form method="post" action="" enctype="text/plain" id="shipping-form">
                 <fieldset>
-                    <label for="destination">Destination</label>
+                    <label for="shipping-form">Destination</label>
                         <select name="continent" id="continent">
                             <option value="">Continent..</option>
                             <option value="AF">Africa</option>
@@ -42,7 +42,7 @@
                             <option value="AN">Antartica</option>
                         </select>
                     
-                    <label for="shipping">Express or Standard?</label>
+                    <label for="shipping-form">Express or Standard?</label>
                         <select name="shipping-type" id="shipping-type">
                             <option value="STD">Standard</option>
                             <option value="EXP">Express</option>
@@ -52,17 +52,18 @@
 
                 
 
-                    <input class="submit-button" type="submit" value="Submit">
+                    <input class="submit-button" type="submit" value="Calculate" onclick="totalCost()">
 
 
                 </fieldset>
 
             </form>
+            <p id="your-cost"></p>
          </main>
          
          <footer>
             <p>&copy;David Sexton 2023</p>
         </footer>
-
+        <script src="/javascript/boardgame.js"></script>
     </body>
 </html>

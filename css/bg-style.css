@@ -68,7 +68,7 @@ li:hover {
 
 #new-deal {
     color: #FFA384 ;
-    background-color: black;
+    background-color: #131313;
     margin:0;
     padding: 0.75em 0 0.75em 0;
 }
@@ -176,10 +176,34 @@ img {
 
 /*About Page CSS  */
 
-#know-more {
+/*#know-more {
     font-weight: bold;
     padding-top: 10em;
 
+} */
+
+
+
+.hidden-information {
+    display: none;
+    background-color: #B50717;
+
+}
+
+.collapse-btn {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.589);
+    padding: 0.5em;
+    border-radius: 0.2em;
+    font-weight: bold;
+    font-size: 1.2em;
+   width: 5em;
+
+}
+
+.avtivated, .collapse-btn {
+    background-color: #bfbfbf;
+    color: black;
 }
 
 
