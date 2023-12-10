@@ -65,6 +65,7 @@ h1 {
 
 .show-bar {
     height: auto;
+    overflow
 }
 
 li {
@@ -254,7 +255,7 @@ fieldset {
     
 }
 
-.submit-button {
+.submit-btn {
     background-color: #CF291D ;
     padding: 0.25em 0.75em ;
     border-radius: 0.50em;
@@ -265,7 +266,7 @@ fieldset {
     border: none;
 }
 
-.submit-button:hover {
+.submit-btn:hover {
     background-color: #B50717;
     
 }

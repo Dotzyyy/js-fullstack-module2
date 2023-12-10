@@ -36,6 +36,9 @@ colorBtn.addEventListener("click", function() {
 
 
 
+
+
+
 /*
 
 let continent = document.getElementById("continent").value
@@ -123,7 +126,7 @@ function revealContent() {
 
 }
 */
-// collapse section
+// Collapse section
 let collapseBtn = document.getElementsByClassName("collapse-btn");
 
 
@@ -170,4 +173,43 @@ for (let inis = 0; inis < collapseBtn.length; inis++) {
  thumbnail[currentImage-1].className += " active";
  };
 
+ // Contact Form
 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ function sendMessage() {
+    let enterName = document.getElementById("enter-name").value;
+    let enterEmail = document.getElementById("enter-email").value;
+    let enterMessage = document.getElementById("enter-message").value;
+    let validEmail = /^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,}$/;
+    let validName = /^[a-zA-Z]+ [a-zA-Z]+$/;
+    let validMessage = /^[A-Za-z]+$/;
+    if ( enterName === "" || enterEmail === "" || enterMessage === "") {
+        alert("Please fill in all neccessary information.")
+    }
+
+    else if(validName.test(enterName)){ 
+        alert("Enter a valid name");
+    }
+
+    else if (validEmail.test(enterEmail)) {
+        alert("Enter a valid email")
+    }
+
+    else if (validMessage.test(enterMessage)) {
+        alert ("Please enter a valid message")
+    }
+
+    else {
+        alert ("Thank you for your message")
+    }
+
+ }
+ 
