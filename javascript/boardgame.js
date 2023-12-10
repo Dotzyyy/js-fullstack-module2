@@ -1,42 +1,42 @@
+// Collapsing nav-bar code
+
+let navBtn = document.querySelector(".nav-btn");
+
+let navBar = document.querySelector(".nav-bar");
+
+navBtn.addEventListener("click", function() {
+    if (navBar.classList.contains("show-bar")) {
+        navBar.classList.remove("show-bar");
+    }
+    else{
+        navBar.classList.add("show-bar");
+    }
 
 
-/* Slieshow code 
+}); 
+
+// Change Color Button
+
+let colorBtn = document.querySelector(".color-btn");
+
+
+colorBtn.addEventListener("click", function() {
+    if (document.body.classList.contains("body-default")) {
+        document.body.classList.remove("body-default");
+        colorBtn.innerHTML = "Dark Mode";
+    }
+    else {
+        document.body.classList.add("body-default");
+        colorBtn.innerHTML = "Light Mode";
+    }
+});
 
 
 
-let currentImage = 1;
- revealImage(currentImage);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 
 
-function changeImage(n) {
-    revealImage(currentImage += n)
-};
 
-function activeImage(n) {
-    revealImage(currentImage = n)
-
-};
-
-function revealImage(n) {
-const images = document.getElementsByClassName("featured-image");
-const thumbnail = document.getElementsByClassName("thumbnail-circle");
-
-if (n > images.length) {currentImage = 1}
-if (n < 1) {currentImage = images.length}
-for (i = 0; i < images.length; i++) {
-    images[i].style.display = "none";
-}
-for (i = 0; i < thumbnail.length; i++) {
-    thumbnail[i].className = thumbnail[i].className.replace(" active", "");
-}
-images[currentImage-1].style.display = "block";
-thumbnail[currentImage-1].className += " active";
-}
-
-/* Shipping Calculator 
-
-let cost = 0
-
+/*
 
 let continent = document.getElementById("continent").value
 
@@ -123,14 +123,14 @@ function revealContent() {
 
 }
 */
+// collapse section
+let collapseBtn = document.getElementsByClassName("collapse-btn");
 
-let coll = document.getElementsByClassName("collapse-btn");
 
 
-
-for (let inis = 0; inis < coll.length; inis++) {
-    coll[inis].addEventListener("click", function() {
-      this.classList.toggle("activated");
+for (let inis = 0; inis < collapseBtn.length; inis++) {
+    collapseBtn[inis].addEventListener("click", function() {
+      this.classList.toggle(".activated");
       let hiddenContent = this.nextElementSibling;
       if (hiddenContent.style.display === "block") {
         hiddenContent.style.display = "none"
@@ -140,4 +140,34 @@ for (let inis = 0; inis < coll.length; inis++) {
     });
   }
 
-  
+  // Slideshow
+  let currentImage = 1;
+  revealImage(currentImage);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+ 
+ 
+ function changeImage(n) {
+     revealImage(currentImage += n)
+ };
+ 
+ function activeImage(n) {
+     revealImage(currentImage = n)
+ 
+ };
+ 
+ function revealImage(n) {
+ const images = document.getElementsByClassName("featured-image");
+ const thumbnail = document.getElementsByClassName("thumbnail-circle");
+ 
+ if (n > images.length) {currentImage = 1}
+ if (n < 1) {currentImage = images.length}
+ for (i = 0; i < images.length; i++) {
+     images[i].style.display = "none";
+ }
+ for (i = 0; i < thumbnail.length; i++) {                                         
+     thumbnail[i].className = thumbnail[i].className.replace(" active", "");
+ }
+ images[currentImage-1].style.display = "block";
+ thumbnail[currentImage-1].className += " active";
+ };
+
+

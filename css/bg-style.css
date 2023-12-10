@@ -7,7 +7,7 @@ html {
 }
 
 
-body {
+.body-default {
     color: #ECECEC;
     background-color: #1D1D1D;
     text-align: center;
@@ -19,6 +19,21 @@ body {
     
     
 }
+
+body {
+    color: black;
+    background-color: #ECECEC;
+    text-align: center;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+
+
+
+
 h1 {
     color: #bfbfbf;
     font-weight: 300;
@@ -29,17 +44,27 @@ h1 {
     
 }
 
-ul {
+
+.nav-btn {
+    cursor: pointer;
+
+}
+
+.nav-bar {
     background-color: #131313;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 0;
     margin-top: 0;
     margin-bottom: 0;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    
-    
+    height: 0;
+    overflow: hidden;
+}
+
+.show-bar {
+    height: auto;
 }
 
 li {
@@ -77,6 +102,12 @@ li:hover {
 }
 img {
     vertical-align: middle;
+}
+
+
+
+.show-bar {
+    height: 10rem;
 }
 
 
@@ -191,19 +222,22 @@ img {
 }
 
 .collapse-btn {
+    margin-bottom: 2em;
+
+}
+
+.collapse-btn > a {
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.589);
+    background-color: rgba(112, 72, 72, 0.589);
     padding: 0.5em;
     border-radius: 0.2em;
     font-weight: bold;
     font-size: 1.2em;
    width: 5em;
-
+    margin: 1em;
 }
 
 .avtivated, .collapse-btn {
-    background-color: #bfbfbf;
-    color: black;
 }
 
 

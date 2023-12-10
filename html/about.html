@@ -4,19 +4,21 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FAQ</title>
-        <link rel="stylesheet" href="/css/bg-style.css">
+        <title>Board Games</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/bg-style.css">
         
     </head>
-    <body>
+    <body class="body-default">
         <header>
             <div><h1>Board Gamers</h1>
              
              </div>
              <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="current"><a href="about.html">About</a></li>
+                <a class="nav-btn"><i class="fa fa-bars" ></i></a>
+                <ul class="nav-bar">
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="myaccount.html">Account</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -49,7 +51,7 @@
             </section>
             <section id="contact-info">
                 
-                 <button type="button" class="collapse-btn">Continue</button>
+                 <h3 class="collapse-btn"><a type="button">Continue</a></h3>
                 
                 <div class="hidden-information">
                     <h2>Contact Information</h2>
@@ -70,6 +72,7 @@
 
          </main>
          <footer>
+            <button class="color-btn">Light Mode</button>
             <p>&copy;David Sexton 2023</p>
         </footer>
         <script src="/javascript/boardgame.js"></script>

@@ -4,17 +4,19 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FAQ</title>
-        <link rel="stylesheet" href="/css/bg-style.css">
+        <title>Board Games</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/bg-style.css">
         
     </head>
-    <body>
+    <body class="body-default">
         <header>
             <div><h1>Board Gamers</h1>
              
              </div>
              <nav>
-                <ul>
+                <a class="nav-btn"><i class="fa fa-bars" ></i></a>
+                <ul class="nav-bar">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li class="current"><a href="faq.html">FAQ</a></li>
@@ -28,37 +30,46 @@
             <h2>Frequently Asked Questions</h2>
             <p>Please read the following before contacting us, thank you!</p>
 
-            <div>
-                <h3>General</h3>
-                <h4>How do I contact you?</h4>
-                <p>Blah blah blah</p>
-                <h4>Is the shop open to the public?</h4>
-                <p>Bal h ja</p>
-                <h4>How do I book a table?</h4>
-                <p>No</p>
-
-            </div>
+            <section>
+               
+               <h3  class="collapse-btn"><a type="button">General</a></h3>
+                <div class="hidden-information">    
+                    <h4>How do I contact you?</h4>
+                    <p>Blah blah blah</p>
+                    <h4>Is the shop open to the public?</h4>
+                    <p>Bal h ja</p>
+                    <h4>How do I book a table?</h4>
+                    <p>No</p>
+                </div>
+            </section>
             <!--Create a shipping calculator-->
-            <div>
-                <h3>Shipping</h3>
-                <h4>What countries do you ship to?</h4>
-                <p>Basically any country NOT in an active warzone and evne then, we will try our best.</p>
-                <h4>What is the shipping cost?</h4>
-                <p>You can calculate at the checkout or using our shipping calculator.</p>
-            </div>
-            <div>
-                <h3>Jobs</h3>
-                <h4>Are you hiring?</h4>
-                <p>Maybe</p>
+            <section>
+                
+                <h3  class="collapse-btn"><a type="button">Shipping</a></h3>
+                <div class="hidden-information">    
+                    <h4>What countries do you ship to?</h4>
+                    <p>Basically any country NOT in an active warzone and evne then, we will try our best.</p>
+                    <h4>What is the shipping cost?</h4>
+                    <p>You can calculate at the checkout or using our shipping calculator.</p>
+             
+                    
+            </section>   
+            <section>
+                
+                <h3 class="collapse-btn"><a type="button" >Careers</a></h3>
+                <div class="hidden-information">    
+                    <h4>Are you hiring?</h4>
+                    <p>Maybe</p>
 
-            </div>
-
+                </div>
+            </section>    
 
 
          </main>
          <footer>
+            <button class="color-btn">Light Mode</button>
             <p>&copy;David Sexton 2023</p>
         </footer>
-
+        <script src="/javascript/boardgame.js"></script>
     </body>
 </html>
