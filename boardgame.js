@@ -31,6 +31,7 @@ colorBtn.addEventListener("click", function() {
     else {
         document.body.classList.add("body-default");
         colorBtn.innerHTML = "Light Mode";
+        navLogo.classList.remove("fa-bars-light")
     }
 });
 
