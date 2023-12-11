@@ -53,6 +53,11 @@ h1 {
 
 }
 
+
+.fa-bars-light {
+    color: black;
+}
+
 .nav-bar {
     background-color: #131313;
     display: flex;
@@ -64,7 +69,10 @@ h1 {
     border-bottom: 1px solid black;
     height: 0;
     overflow: hidden;
+    
 }
+
+
 
 .show-bar {
     height: auto;
@@ -74,6 +82,7 @@ h1 {
 li {
     list-style-type: none;
     padding: 10px;
+    
     
 }
 
@@ -94,6 +103,13 @@ li:hover {
 
 }
 
+footer {
+    
+    border-top: 1px solid #B50717 ;
+    margin-top: 10em;
+    font-size: 0.75em;
+}
+
 
 #new-deal {
     color: #FFA384 ;
@@ -106,7 +122,17 @@ li:hover {
 }
 
 
+.color-btn {
+    
+    color: #131313;
+    background-color: #f5eae9 ;
+    padding: 0.25em 0.75em ;
+    border-radius: 0.50em;
+    font-weight: 600;
+    margin-top: 1em;
 
+
+}
 
 
 
@@ -143,8 +169,8 @@ li:hover {
 
 
 #featured-banner {
-    max-width: 100%;
-    position: relative;
+   
+    width: 100%;
     
     
 }
@@ -156,10 +182,10 @@ li:hover {
 }
 
 .featured-image > img {
-    max-width: 100%;
+    width: 100%;
     
     margin-bottom: 0.5em;
-    object-fit: contain;
+    
     
 }
 
@@ -167,11 +193,12 @@ li:hover {
 
 .banner-btn {
     position: absolute;
-    top: 50%;
-    width: 20%;
+    top: 30%;
+    width: 25%;
     opacity: 0.8;
-    color: white;
+    color: #ffffff;
     right: 0;
+    size: 10em;
 
 }
 
@@ -182,13 +209,14 @@ li:hover {
     border-radius: 2em;
     cursor: pointer;
     
+    
 }
 
 
 .feather-chevron:hover {
-    background-color: black;
+    color: black;
     
-    opacity: 0.20;
+    
 }
 
 .active, .thumbnail-circle:hover {
@@ -224,19 +252,20 @@ li:hover {
     font-weight: 600;
 }
 
-@media (min-width: 80em) {
+@media (min-width: 60em) {
     .featured-image > img {
         width: 100%;
-        object-fit: cover;
-
+        max-height:35vw;
+        object-fit:cover;
+        overflow: hidden;
     }
 
-    #featured-banner {
-        width: 100%;
-        height: 
-    }
+    
+
+    
 /* About and Need Help sections */
-    #home-container {
+   @media (min-width: 80em) {
+   #home-container {
         flex-direction: row;
         
     }
@@ -255,8 +284,15 @@ li:hover {
         max-width: 10em;
         
     }
+    .banner-btn {
+        top: 65%;
+        
+
+    }
+}
     
 }
+
 
 
 
@@ -280,34 +316,49 @@ li:hover {
 
 .collapse-btn {
     margin-bottom: 2em;
+    
+    
 
 }
 
 .collapse-btn > a {
     cursor: pointer;
-    background-color: rgba(112, 72, 72, 0.589);
+    background-color: rgba(48, 40, 40, 0.589);
     padding: 0.5em;
     border-radius: 0.2em;
     font-weight: bold;
     font-size: 1.2em;
-    width: 5em;
+    
     margin: 1em;
+    
 }
 
-.avtivated, .collapse-btn {
+.collapse-btn:hover > a {
+    background-color: #131313;
+    
 }
+
+
 
 
 
 
 
 /* Contact Page Css */
+form {
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 2em;
+}
+
 
 fieldset {
     display: flex;
     flex-direction: column;
     border: none;
-    
+    max-width: 100%;
+    text-align: center;
+    padding: 3em;
     
 }
 

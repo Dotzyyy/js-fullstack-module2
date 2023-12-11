@@ -18,11 +18,14 @@ navBtn.addEventListener("click", function() {
 // Change Color Button
 
 let colorBtn = document.querySelector(".color-btn");
+let navLogo = document.getElementById("nav-logo")
+
 
 
 colorBtn.addEventListener("click", function() {
     if (document.body.classList.contains("body-default")) {
         document.body.classList.remove("body-default");
+        navLogo.classList.add("fa-bars-light")
         colorBtn.innerHTML = "Dark Mode";
     }
     else {
@@ -171,6 +174,8 @@ for (let inis = 0; inis < collapseBtn.length; inis++) {
  }
  images[currentImage-1].style.display = "block";
  thumbnail[currentImage-1].className += " active";
+
+ 
  };
 
  // Contact Form
@@ -195,15 +200,15 @@ for (let inis = 0; inis < collapseBtn.length; inis++) {
         alert("Please fill in all neccessary information.")
     }
 
-    else if(validName.test(enterName)){ 
+    else if(!validName.test(enterName)){ 
         alert("Enter a valid name");
     }
 
-    else if (validEmail.test(enterEmail)) {
+    else if (!validEmail.test(enterEmail)) {
         alert("Enter a valid email")
     }
 
-    else if (validMessage.test(enterMessage)) {
+    else if (!validMessage.test(enterMessage)) {
         alert ("Please enter a valid message")
     }
 
